@@ -5,7 +5,6 @@ namespace Data_Structures
 {
     class PriorityQueue
     {
-        private int start = -1;
         private int end = -1;
         private int[] queue;
 
@@ -26,7 +25,6 @@ namespace Data_Structures
                 growQueue();
             else if (IsEmpty())
             {
-                start = 0;
                 queue[++end] = element;
                 return;
             }
@@ -49,7 +47,7 @@ namespace Data_Structures
         {
             StringBuilder str = new StringBuilder("[ ");
             if (!IsEmpty())
-                for (int index = end; index >= start; index--)
+                for (int index = end; index >= 0; index--)
                     str.Append($"{queue[index]} ");
 
             str.Append(']');
@@ -67,7 +65,7 @@ namespace Data_Structures
 
         private int indexToInsert(int element)
         {
-            int index = binarySearchForIndex(start, end, element);
+            int index = binarySearchForIndex(0, end, element);
             if (queue[index] > element && index != 0)
                 index--;
             else if (queue[index] < element && index != size)
