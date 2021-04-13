@@ -47,10 +47,11 @@
     <Compile Include="DoubleStack.cs" />
     <Compile Include="DynamicArray.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedListQueue.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueueExercise1.cs" />
+    <Compile Include="ReverseKElements.cs" />
     <Compile Include="Stack.cs" />
     <Compile Include="StringOperations.cs" />
   </ItemGroup>
