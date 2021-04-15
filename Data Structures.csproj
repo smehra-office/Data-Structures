@@ -46,6 +46,9 @@
     <Compile Include="ArrayQueueCircular.cs" />
     <Compile Include="DoubleStack.cs" />
     <Compile Include="DynamicArray.cs" />
+    <Compile Include="CharFinder.cs" />
+    <Compile Include="HashMapLinear.cs" />
+    <Compile Include="HashTable.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="LinkedListQueue.cs" />
     <Compile Include="PriorityQueue.cs" />
